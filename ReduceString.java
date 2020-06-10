@@ -1,6 +1,4 @@
 package com.wipro.practice;
-
-import javax.swing.plaf.synth.SynthLookAndFeel;
 import java.util.Scanner;
 
 public class ReduceString {
@@ -10,17 +8,13 @@ public class ReduceString {
             for(int i=1;i<input.length();i++)
                 if(i%2==0)
                     reduce_string+=input.charAt(i);
-        }else {
+        }
+        else {
             for(int i=1;i<input.length();i++)
                 if(i%2!=0)
                     reduce_string+=input.charAt(i);
         }
-        System.out.println((input.charAt(0)+""+reduce_string).toUpperCase());
-        return null;
-    }
-    public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        String input1=sc.nextLine();
-        reduceString(input1);
+        return input.charAt(0)+""+reduce_string).toUpperCase();
     }
 }
+    //main() function is already written internally in the test engine.
